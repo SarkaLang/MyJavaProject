@@ -4,9 +4,9 @@
 <head>
     [#include "_common/head.ftlh"]
 </head>
-<body>
+<body class="d-flex flex-column vh-100" style="background-image: url('/img/parking.jpg'); background-position: center; background-repeat: no-repeat">
 <!-- Třída „container“ je z Bootstrapu a zařídí, že stránka se na šířku nebude zvětšovat donekonečna -->
-<div class="container">
+<div class="container d-flex flex-column flex-grow-1 justify-content-between bg-white p-0" style="background-color: white">
     [#include "_common/header.ftlh"]
     <!-- Třídy Bootstrapu, zajistí centrování textu. -->
     <div class="px-3 py-3 my-4 text-center justify-content-center d-flex flex-wrap">
@@ -33,6 +33,7 @@
             <a class="dropdown-item" href="#">Ještě nemáš účet? Založit</a>
             <a class="dropdown-item" href="#">Zapomněl jsi heslo?</a>
         </div>
+    [#include "_common/footer.ftlh"]
 </div>
 <script crossorigin="anonymous"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"

@@ -11,10 +11,6 @@ public class ParkingPlace {
 
     private int numberOfFlour;
 
-    private LocalDate dateOfArrival;
-
-    private LocalDate dateOfDeparture;
-
     private int price;
 
     public int getPrice() {
@@ -29,12 +25,10 @@ public class ParkingPlace {
 
     }
 
-    public ParkingPlace(boolean status, int parkingNumber, int numberOfFlour, LocalDate dateOfArrival, LocalDate dateOfDeparture, int price) {
+    public ParkingPlace(boolean status, int parkingNumber, int numberOfFlour, int price) {
         this.status = status;
         this.parkingNumber = parkingNumber;
         this.numberOfFlour = numberOfFlour;
-        this.dateOfArrival = dateOfArrival;
-        this.dateOfDeparture = dateOfDeparture;
         this.price = price;
     }
 
@@ -62,22 +56,4 @@ public class ParkingPlace {
         this.numberOfFlour = numberOfFlour;
     }
 
-
-    public LocalDate getDateOfArrival() {
-        return dateOfArrival;
-    }
-
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    public void setDateOfArrival(LocalDate dateOfArrival) {
-        this.dateOfArrival = dateOfArrival;
-    }
-
-    public LocalDate getDateOfDeparture() {
-        return dateOfDeparture;
-    }
-
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    public void setDateOfDeparture(LocalDate dateOfDeparture) {
-        this.dateOfDeparture = dateOfDeparture;
-    }
 }
