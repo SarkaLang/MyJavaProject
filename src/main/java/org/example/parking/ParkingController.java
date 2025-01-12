@@ -25,10 +25,12 @@ public class ParkingController {
         result.addObject("dateOfArrival", dateOfArrivalStr != null ? dateOfArrivalStr : "");
         result.addObject("dateOfDeparture", dateOfDepartureStr != null ? dateOfDepartureStr : "");
 
-        result.addObject("parkingPlace", service.findAll());
-
          long numberOfDays = service.getNumberOfDays(dateOfArrivalStr, dateOfDepartureStr);
          result.addObject("parkingDate", numberOfDays);
+
+        if (dateOfArrivalStr != null && dateOfDepartureStr != null) {
+            result.addObject("parkingPlace", service.findAll());
+        }
 
         return result;
     }

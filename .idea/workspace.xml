@@ -4,29 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d53d96-7b7e-4b74-a1d2-111fdda47576" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ParkingDate.java" afterDir="false" />
+    <list default="true" id="45d53d96-7b7e-4b74-a1d2-111fdda47576" name="Changes" comment="template edit">
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/entity/ParkingPlace.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/entity/ParkingPlace.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/placeID.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/placeID.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingController.class.uniqueId1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingService.class.uniqueId0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingController.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/ParkingPlace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ParkingPlace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/placeID.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/placeID.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,14 +159,38 @@
       <workItem from="1736681388113" duration="2093000" />
       <workItem from="1736683495566" duration="14000" />
       <workItem from="1736683960569" duration="88000" />
-      <workItem from="1736684060919" duration="5978000" />
+      <workItem from="1736684060919" duration="8015000" />
     </task>
+    <task id="LOCAL-00001" summary="template edit">
+      <option name="closed" value="true" />
+      <created>1736690075787</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736690075787</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="template edit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.gradle/8.11/executionHistory/executionHistory.bin&#10;#&#9;.gradle/8.11/executionHistory/executionHistory.lock&#10;#&#9;.gradle/8.11/fileHashes/fileHashes.bin&#10;#&#9;.gradle/8.11/fileHashes/fileHashes.lock&#10;#&#9;.gradle/8.11/fileHashes/resourceHashesCache.bin&#10;#&#9;.gradle/buildOutputCleanup/buildOutputCleanup.lock&#10;#&#9;.gradle/file-system.probe&#10;#&#9;.idea/workspace.xml&#10;#&#9;build/resources/main/templates/placeID.ftlh&#10;#&#9;src/main/resources/templates/placeID.ftlh" />
+    <MESSAGE value="template edit - time &amp; ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="template edit - time &amp; ID" />
   </component>
 </project>

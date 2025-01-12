@@ -13,6 +13,8 @@
     <!-- Třídy Bootstrapu, zajistí centrování textu. -->
     <div class="px-4 py-5 my-5 text-center" style="margin-bottom: 20px">
 
+        <h3 style="margin-bottom: 40px">Vyberte datum a rezervujte si své místo</h3>
+
         <div class="row mb-5 justify-content-center align-items-center">
             <!-- Obalovací div s rámečkem a zaoblenými rohy -->
             <div class="col-md-6 rounded p-6" style="max-width: 50%; border: 2px solid rgba(67,63,63,0.4); border-radius: 10px; padding: 20px;">
@@ -75,6 +77,7 @@
             [/#list]
             </tbody>
         </table>
+
     </div>
 
     [#include "_common/footer.ftlh"]
