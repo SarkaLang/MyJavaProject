@@ -17,7 +17,7 @@
 
         <div class="row mb-5 justify-content-center align-items-center">
             <!-- Obalovací div s rámečkem a zaoblenými rohy -->
-            <div class="col-md-6 rounded p-6" style="max-width: 50%; border: 2px solid rgba(67,63,63,0.4); border-radius: 10px; padding: 20px;">
+            <div class="col-md-6 rounded p-6" style="max-width: 50%; border: 2px solid rgba(47,170,211,0.4); border-radius: 10px; padding: 20px;">
                 <!-- Formulář pro výběr dat -->
                 <form action="/" method="get" class="d-flex justify-content-between align-items-end">
                     <div class="mb-1">

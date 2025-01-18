@@ -3,12 +3,14 @@ package org.example.entity;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
-import java.time.temporal.ChronoUnit;
+import jakarta.validation.constraints.FutureOrPresent;
 
 public class ParkingDate {
 
+    @FutureOrPresent(message = "Datum musí být dnešní nebo do budoucnosti")
     private LocalDate dateOfArrival;
 
+    @FutureOrPresent(message = "Datum musí být dnešní nebo do budoucnosti")
     private LocalDate dateOfDeparture;
 
     public ParkingDate () {

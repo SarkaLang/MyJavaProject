@@ -1,15 +1,22 @@
 package org.example.parking;
 
+import jakarta.validation.Valid;
+import org.example.entity.ParkingDate;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.*;
+
 import java.time.LocalDate;
 
 
+@Validated
 @Controller
 public class ParkingController {
 
@@ -18,17 +25,20 @@ public class ParkingController {
     public ParkingController(ParkingService service) {this.service = service;}
 
     @GetMapping("/")
-    public ModelAndView mainPaige(@RequestParam(value = "dateOfArrival", required = false) String dateOfArrivalStr, @RequestParam(value = "dateOfDeparture", required = false) String dateOfDepartureStr) {
+    public ModelAndView mainPaige(@Valid @ModelAttribute ParkingDate parkingDate, BindingResult bindingResult) {
 
         ModelAndView result = new ModelAndView("index");
 
-        result.addObject("dateOfArrival", dateOfArrivalStr != null ? dateOfArrivalStr : "");
-        result.addObject("dateOfDeparture", dateOfDepartureStr != null ? dateOfDepartureStr : "");
+        String dateOfArrival = parkingDate.getDateOfArrival() != null ? parkingDate.getDateOfArrival().toString() : String.valueOf(LocalDate.now());
+        String dateOfDeparture = parkingDate.getDateOfDeparture() != null ? parkingDate.getDateOfDeparture().toString() : String.valueOf(LocalDate.now());
 
-         long numberOfDays = service.getNumberOfDays(dateOfArrivalStr, dateOfDepartureStr);
+        result.addObject("dateOfArrival", dateOfArrival);
+        result.addObject("dateOfDeparture", dateOfDeparture);
+
+         long numberOfDays = service.getNumberOfDays(dateOfArrival, dateOfDeparture);
          result.addObject("parkingDate", numberOfDays);
 
-        if (dateOfArrivalStr != null && dateOfDepartureStr != null) {
+       if (numberOfDays > 0) {
             result.addObject("parkingPlace", service.findAll());
         }
 

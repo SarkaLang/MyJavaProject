@@ -4,20 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45d53d96-7b7e-4b74-a1d2-111fdda47576" name="Changes" comment="template edit">
+    <list default="true" id="45d53d96-7b7e-4b74-a1d2-111fdda47576" name="Changes" comment="template edit - time &amp; ID">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.11/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.11/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.11/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/entity/ParkingDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/entity/ParkingDate.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/example/parking/ParkingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/index.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/placeID.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/placeID.ftlh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingController.class.uniqueId0" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/ParkingController.class.uniqueId0" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/entity/ParkingDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/entity/ParkingDate.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/parking/ParkingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.ftlh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/placeID.ftlh" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/placeID.ftlh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +112,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -159,7 +170,12 @@
       <workItem from="1736681388113" duration="2093000" />
       <workItem from="1736683495566" duration="14000" />
       <workItem from="1736683960569" duration="88000" />
-      <workItem from="1736684060919" duration="8015000" />
+      <workItem from="1736684060919" duration="9535000" />
+      <workItem from="1737189143443" duration="850000" />
+      <workItem from="1737190551545" duration="215000" />
+      <workItem from="1737190780391" duration="1531000" />
+      <workItem from="1737192553231" duration="2107000" />
+      <workItem from="1737214852867" duration="3206000" />
     </task>
     <task id="LOCAL-00001" summary="template edit">
       <option name="closed" value="true" />
