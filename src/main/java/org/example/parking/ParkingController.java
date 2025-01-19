@@ -2,6 +2,7 @@ package org.example.parking;
 
 import jakarta.validation.Valid;
 import org.example.entity.ParkingDate;
+import org.example.entity.ParkingPlace;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -14,6 +15,9 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.util.stream.Collectors;
+
+import java.util.List;
 
 
 @Validated
@@ -25,7 +29,7 @@ public class ParkingController {
     public ParkingController(ParkingService service) {this.service = service;}
 
     @GetMapping("/")
-    public ModelAndView mainPaige(@Valid @ModelAttribute ParkingDate parkingDate, BindingResult bindingResult) {
+    public ModelAndView mainPaige(@Valid @ModelAttribute ParkingDate parkingDate) {
 
         ModelAndView result = new ModelAndView("index");
 
@@ -39,7 +43,12 @@ public class ParkingController {
          result.addObject("parkingDate", numberOfDays);
 
        if (numberOfDays > 0) {
+
+           List<ParkingPlace> parkingPlacePrice = service.findAll().stream()
+                           .peek(place -> place.setPrice(service.getPrice(place, numberOfDays)))
+                                   .toList();
             result.addObject("parkingPlace", service.findAll());
+            result.addObject("parkingPlacePrice", parkingPlacePrice);
         }
 
         return result;
@@ -58,5 +67,16 @@ public class ParkingController {
         detail.addObject("dateOfArrival", dateOfArrivalStr);
         detail.addObject("dateOfDeparture", dateOfDepartureStr);
         return detail;
+    }
+
+    @PostMapping("/{id}")
+    public Object form(@Valid @ModelAttribute ParkingPlace parkingPlace, BindingResult bindingResult) {
+
+        if (bindingResult.hasErrors()) {
+            return "placeID";
+        }
+
+        return new ModelAndView("/placeReservation");
+
     }
 }

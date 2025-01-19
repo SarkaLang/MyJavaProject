@@ -69,7 +69,7 @@
                 </td>
                 <td>${parkingplace.parkingNumber}</td>
                 <td>${parkingplace.numberOfFlour}</td>
-                <td>${parkingplace.price} Kč</td>
+                <td>${parkingPlacePrice} Kč</td>
                 <td>
                     <a href="/${parkingplace?index}?dateOfArrival=${dateOfArrival}&dateOfDeparture=${dateOfDeparture}" class="btn btn-primary">Vybrat</a>
                 </td>
