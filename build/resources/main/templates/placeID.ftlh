@@ -35,7 +35,7 @@
             <!-- Třetí řádek: Cena -->
             <div class="row">
                 <div class="col-12 text-start">
-                    <p class="mb-0"><strong>Cena:</strong> ${parkingPlace.price} Kč</p>
+                    <p class="mb-0"><strong>Cena:</strong> ${parkingPlace.newPrice} Kč</p>
                 </div>
             </div>
         </div>

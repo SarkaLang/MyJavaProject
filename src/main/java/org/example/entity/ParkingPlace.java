@@ -13,23 +13,18 @@ public class ParkingPlace {
 
     private int price;
 
-    public int getPrice() {
-        return price;
-    }
+    private int newPrice;
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public ParkingPlace () {
+    public ParkingPlace() {
 
     }
 
-    public ParkingPlace(boolean status, int parkingNumber, int numberOfFlour, int price) {
+    public ParkingPlace(boolean status, int parkingNumber, int numberOfFlour, int price, int newPrice) {
         this.status = status;
         this.parkingNumber = parkingNumber;
         this.numberOfFlour = numberOfFlour;
         this.price = price;
+        this.newPrice = newPrice;
     }
 
     public boolean isStatus() {
@@ -56,4 +51,19 @@ public class ParkingPlace {
         this.numberOfFlour = numberOfFlour;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public int getNewPrice() {
+        return newPrice;
+    }
+
+    public void setNewPrice(int newPrice) {
+        this.newPrice = newPrice;
+    }
 }

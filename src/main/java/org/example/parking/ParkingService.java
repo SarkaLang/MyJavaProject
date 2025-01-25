@@ -14,17 +14,17 @@ public class ParkingService {
     private final List<ParkingPlace> parkingPlace = new ArrayList<>();
 
     public ParkingService() {
-      parkingPlace.add(new ParkingPlace(true, 1, 3, 250));
-        parkingPlace.add(new ParkingPlace(false, 2, 3, 200) );
-        parkingPlace.add(new ParkingPlace(true, 3, 3,170) );
-        parkingPlace.add(new ParkingPlace(false, 4, 3,  350));
-        parkingPlace.add(new ParkingPlace(false, 5, 3, 200));
-        parkingPlace.add(new ParkingPlace(false, 6, 3, 220));
-        parkingPlace.add(new ParkingPlace(true, 7, 3, 199));
-        parkingPlace.add(new ParkingPlace(true, 8, 3,  201));
-        parkingPlace.add(new ParkingPlace(true, 9, 3,  185));
-        parkingPlace.add(new ParkingPlace(true, 10, 3,  210));
-        parkingPlace.add(new ParkingPlace(true, 11, 3,  350));
+      parkingPlace.add(new ParkingPlace(true, 1, 3, 250, 0));
+        parkingPlace.add(new ParkingPlace(false, 2, 3, 200, 0) );
+        parkingPlace.add(new ParkingPlace(true, 3, 3,170, 0) );
+        parkingPlace.add(new ParkingPlace(false, 4, 3,  350, 0));
+        parkingPlace.add(new ParkingPlace(false, 5, 3, 200, 0));
+        parkingPlace.add(new ParkingPlace(false, 6, 3, 220, 0));
+        parkingPlace.add(new ParkingPlace(true, 7, 3, 199, 0));
+        parkingPlace.add(new ParkingPlace(true, 8, 3,  201, 0));
+        parkingPlace.add(new ParkingPlace(true, 9, 3,  185, 0));
+        parkingPlace.add(new ParkingPlace(true, 10, 3,  210, 0));
+        parkingPlace.add(new ParkingPlace(true, 11, 3,  350, 0));
     }
 
     public List<ParkingPlace> findAll() {return parkingPlace;}

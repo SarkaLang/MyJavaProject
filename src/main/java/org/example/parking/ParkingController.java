@@ -44,11 +44,10 @@ public class ParkingController {
 
        if (numberOfDays > 0) {
 
-           List<ParkingPlace> parkingPlacePrice = service.findAll().stream()
-                           .peek(place -> place.setPrice(service.getPrice(place, numberOfDays)))
+          List<ParkingPlace> parkingPlace = service.findAll().stream()
+                           .peek(place -> place.setNewPrice(service.getPrice(place, numberOfDays)))
                                    .toList();
-            result.addObject("parkingPlace", service.findAll());
-            result.addObject("parkingPlacePrice", parkingPlacePrice);
+            result.addObject("parkingPlace", parkingPlace);
         }
 
         return result;
