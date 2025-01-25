@@ -10,7 +10,8 @@ K řešení:
 
 - databáze
 - testování
-- validace formuláře
+- přihlašování
+- zabezpečení
 
 ..dále?
 
