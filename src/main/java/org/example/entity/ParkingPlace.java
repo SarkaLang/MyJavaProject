@@ -1,12 +1,22 @@
 package org.example.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import java.time.LocalDate;
 
+@Entity
 public class ParkingPlace {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+
     private boolean status;
+
     private int parkingNumber;
 
     private int numberOfFlour;
@@ -65,5 +75,13 @@ public class ParkingPlace {
 
     public void setNewPrice(int newPrice) {
         this.newPrice = newPrice;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 }

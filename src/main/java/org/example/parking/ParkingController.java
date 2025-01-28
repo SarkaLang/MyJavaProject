@@ -15,8 +15,6 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.util.stream.Collectors;
-
 import java.util.List;
 
 
@@ -61,8 +59,8 @@ public class ParkingController {
     @GetMapping("/{id}")
     public ModelAndView parkingPlaceID(@PathVariable int id, @RequestParam(value = "dateOfArrival", required = false) String dateOfArrivalStr, @RequestParam(value = "dateOfDeparture", required = false) String dateOfDepartureStr) {
         ModelAndView detail =  new ModelAndView("placeID");
-        detail.addObject("placeID", service.findById(id));
-        detail.addObject("parkingPlace", service.findById(id));
+        detail.addObject("placeID", service.findById((long) id));
+        detail.addObject("parkingPlace", service.findById((long) id));
         detail.addObject("dateOfArrival", dateOfArrivalStr);
         detail.addObject("dateOfDeparture", dateOfDepartureStr);
         return detail;

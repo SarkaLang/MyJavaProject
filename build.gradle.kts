@@ -2,6 +2,7 @@ plugins {
     id("org.springframework.boot") version "3.2.4"
     id("io.spring.dependency-management") version "1.1.4"
     id("java")
+    id("org.flywaydb.flyway") version "9.22.3"
 }
 
 group = "org.example"
@@ -21,6 +22,9 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-validation")
     implementation("org.springframework.boot:spring-boot-starter-freemarker")
     implementation("org.hibernate.validator:hibernate-validator:8.0.0.Final")
+    implementation("org.flywaydb:flyway-core")
+
+    runtimeOnly("com.h2database:h2")
 
     modules {
         module("org.springframework.boot:spring-boot-starter-tomcat") {
